@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/trackpad"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <RelativeLayout
+    android:id="@+id/board"
+    android:layout_width="360dp"
+    android:layout_height="360dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/rectangle"
+    android:elevation="30dp"
+
+    tools:ignore="UselessParent">
+
+    <ImageButton
+      android:id="@+id/black_round"
+      android:translationZ="1dp"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="8dp"
+      android:background="@drawable/round" />
+
+    <ImageView
+      android:id="@+id/x_axis"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/line" />
+
+    <ImageView
+      android:id="@+id/y_axis"
+      android:layout_width="450dp"
+      android:layout_height="450dp"
+      android:layout_alignStart="@+id/black_round"
+      android:layout_alignTop="@+id/black_round"
+      android:layout_alignEnd="@+id/black_round"
+      android:layout_alignBottom="@+id/black_round"
+      android:layout_marginStart="-155dp"
+      android:layout_marginTop="-155dp"
+      android:layout_marginEnd="-155dp"
+      android:layout_marginBottom="-155dp"
+      android:background="@drawable/line"
+      android:rotation="90" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignStart="@+id/y_axis"
+      android:layout_alignTop="@+id/y_axis"
+      android:layout_alignEnd="@+id/y_axis"
+      android:layout_alignBottom="@+id/y_axis"
+      android:layout_marginStart="15dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginEnd="292dp"
+      android:layout_marginBottom="321dp"
+      android:text="0,0" />
+
+    <TextView
+      android:layout_width="31dp"
+      android:layout_height="16dp"
+      android:layout_alignStart="@+id/y_axis"
+      android:layout_alignEnd="@+id/y_axis"
+      android:layout_alignBottom="@+id/y_axis"
+      android:layout_marginStart="316dp"
+      android:layout_marginEnd="15dp"
+      android:layout_marginBottom="15dp"
+      android:text="1,1" />
+
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/x_coord"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="175dp"
+    android:layout_marginTop="55dp"
+    android:layout_marginEnd="177dp"
+    android:layout_marginBottom="533dp"
+    android:text="X: 0.50" />
+
+  <TextView
+    android:id="@+id/y_coord"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="175dp"
+    android:layout_marginTop="98dp"
+    android:layout_marginEnd="177dp"
+    android:layout_marginBottom="490dp"
+    android:text="Y: 0.50" />
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">Trackpad</string>
+  <string name="Y">Y: </string>
+  <string name="X">X: </string>
+</resources>

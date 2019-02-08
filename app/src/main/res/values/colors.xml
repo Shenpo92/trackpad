@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#F1F1F1</color>
+  <color name="colorPrimaryDark">#000000</color>
+  <color name="colorAccent">#135589</color>
+  <color name="pointBackground">#135589</color>
+  <color name="pointTouchBackground">#aed9da</color>
+  <color name="tpBackground">#cccece</color>
+
+</resources>
